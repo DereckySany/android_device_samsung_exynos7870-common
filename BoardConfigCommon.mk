@@ -137,6 +137,7 @@ BOARD_USE_VP8ENC_SUPPORT := true
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|libcamera_client_shim.so \
+    /system/lib/libexynoscamera.so|libexynoscamera_shim.so
 
 # System Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
