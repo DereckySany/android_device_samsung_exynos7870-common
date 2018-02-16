@@ -141,6 +141,8 @@ TARGET_LD_SHIM_LIBS += \
 
 # Shim-OMX
 TARGET_LD_SHIM_LIBS += \
+    /system/lib/libexynoscamera.so|libstagefright_shim.so \
+    /system/lib/libexynoscamera3.so|libstagefright_shim.so \
     /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|libui_shim.so \
@@ -150,7 +152,17 @@ TARGET_LD_SHIM_LIBS += \
     /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|libui_shim.so
+    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.HEVC.Encoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|libstagefright_shim.so \
+    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|libstagefright_shim.so
 
 # System Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop

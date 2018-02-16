@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
 # Omx Shims
 PRODUCT_PACKAGES  += \
     libui_shim \
+    libstagefright_shim \
     libExynosOMX_shim
 
 PRODUCT_COPY_FILES += \
