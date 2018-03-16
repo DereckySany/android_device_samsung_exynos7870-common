@@ -139,6 +139,19 @@ TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|libcamera_client_shim.so \
     /system/lib/libexynoscamera.so|libexynoscamera_shim.so
 
+# Shim-OMX
+TARGET_LD_SHIM_LIBS += \
+    /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.HEVC.Encoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|libui_shim.so
+
 # System Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
