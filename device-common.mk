@@ -157,7 +157,9 @@ PRODUCT_PACKAGES += \
     libril \
     ebtables \
     ethertypes \
-    libebtc
+    libebtc \
+    android.hardware.radio@1.0 \
+    android.hardware.radio.deprecated@1.0
 
 # Ramdisk
 PRODUCT_PACKAGES += \
