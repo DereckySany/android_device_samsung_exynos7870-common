@@ -44,7 +44,11 @@ PRODUCT_PACKAGES += \
 
 #Camera
  PRODUCT_PACKAGES += \
-    camera.universal7870
+    camera.universal7870 \
+    camera.device@3.2-impl \
+    camera.device@1.0-impl \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
