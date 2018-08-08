@@ -53,6 +53,11 @@ PRODUCT_PACKAGES += \
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl
