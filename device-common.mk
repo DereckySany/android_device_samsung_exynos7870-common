@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
 
+# Network
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # Offmode charger
 PRODUCT_PACKAGES += \
     charger_res_images
